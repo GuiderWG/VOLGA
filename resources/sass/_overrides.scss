@@ -1,2 +1,9 @@
 // подключим локальный Open Sans шрифт, чтобы не зависеть
-@import '../fonts/opensans/opensans.css';
+@import '../fonts/SourceSansPro/SourceSansPro.css';
+
+body {
+  color: $black;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+  line-height: normal;
+}

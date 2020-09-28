@@ -1,0 +1,21 @@
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <div class="header__logo">
+                    {% include '../_components/logo/logo.twig' %}
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="header__contacts-mini">
+                    {%  include "../_components/contactsMini/contactsMini.twig" with {'class': 'contacts-mini'} %}
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="header__callback">
+                    {%  include "../_components/buttons/btn.twig" with {'name': 'Заказать звонок'} %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

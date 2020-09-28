@@ -1,0 +1,18 @@
+{% set contacts = [
+    {src: '/images/icons/phone.svg', text: '+7 (666) 555-44-33', href: 'tel:+76665554433'},
+    {src: '/images/icons/email.svg', text: 'info@volga-shm.ru', href: 'mailto:info@volga-shm.ru'},
+    {src: '/images/icons/time.svg', text: '9:00-18:00'},
+] %}
+
+<div class="{{ class|default('contacts-mini') }}">
+    {% for item in contacts %}
+        <div class="contacts-mini__item">
+            <div class="contacts-mini__icon"><img src="{{ item.src }}" alt="" class="contacts-mini__img"></div>
+            {% if item.href %}
+                <a href="{{ item.href }}" class="contacts-mini__link">{{ item.text }}</a>
+            {% else %}
+                <span class="contacts-mini__text">{{ item.text }}</span>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

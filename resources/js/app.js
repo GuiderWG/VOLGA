@@ -1,6 +1,3 @@
-/*
- * Сборка проекта: зависимости, начальная загрузка
- */
 import $ from 'jquery';
 window.$ = window.jQuery = $;
 
@@ -13,6 +10,9 @@ require('@fancyapps/fancybox');
 
 // Slick slider
 import 'slick-carousel';
+
+/* Mobile menu */
+require('hc-offcanvas-nav');
 
 // Глобальный код проекта: фреймворк, другой минифицируемый код.
 console.log('ASMFM project: application has been started.');
