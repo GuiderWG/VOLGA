@@ -11,9 +11,14 @@
                     {%  include "../_components/contactsMini/contactsMini.twig" with {'class': 'contacts-mini'} %}
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 d-none d-lg-block">
                 <div class="header__callback">
-                    {%  include "../_components/buttons/btn.twig" with {'name': 'Заказать звонок'} %}
+                    {%  include "../_components/buttons/btn.twig" with
+                        {
+                        'name': 'Заказать звонок',
+                        'data': 'data-toggle="modal" data-target="#callback"'
+                        }
+                    %}
                 </div>
             </div>
         </div>

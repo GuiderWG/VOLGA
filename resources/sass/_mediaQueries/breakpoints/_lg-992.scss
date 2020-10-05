@@ -1,1 +1,26 @@
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .header {
+    &__logo {
+      margin: 0 auto 30px;
+      max-width: 180px;
+    }
+    &__callback {
+      margin: 30px auto 0;
+      max-width: 260px;
+    }
+  }
+  .navbar-main {
+    display: none;
+  }
+
+  .slider-nav {
+    width: 465px;
+    height: 210px;
+    & div p {
+      font-size: 26px;
+      line-height: 30px;
+      margin-top: 50px;
+      padding-left: 30px;
+    }
+  }
+}

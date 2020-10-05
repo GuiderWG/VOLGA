@@ -1,5 +1,30 @@
 <div class="top-menu">
     <div class="container">
         {% include '../_components/navigations/navbarMain.twig' %}
+        <div class="mobile-line d-lg-none">
+            <div class="mobile-line__hamburger">
+                {%  include "../_components/buttons/btnLink.twig" with
+                    {
+                        'name': '<span class="mobile-menu-btn__span"></span>',
+                        'class': 'mobile-menu-btn',
+                    }
+                %}
+                <a href="#menu" class="mobile-menu-btn">
+                    <span class="mobile-menu-btn__span"></span>
+                </a>
+            </div>
+            <div class="mobile-line__callback">
+                {%  include "../_components/buttons/btn.twig" with
+                    {
+                        'name': 'Заказать звонок',
+                        'class': 'btn-default btn-default_theme_white_hover',
+                        'data': 'data-toggle="modal" data-target="#callback"'
+                    }
+                %}
+            </div>
+        </div>
+
     </div>
 </div>
+
+{% include '../_components/navigations/navbarMobile.twig' %}

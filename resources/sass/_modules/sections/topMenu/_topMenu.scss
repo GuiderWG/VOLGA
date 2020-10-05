@@ -1,3 +1,12 @@
 .top-menu {
   background: $corporate;
+  color: $white;
+}
+
+.mobile-line {
+  display: flex;
+  justify-content: space-between;
+  &__callback {
+    width: 220px;
+  }
 }

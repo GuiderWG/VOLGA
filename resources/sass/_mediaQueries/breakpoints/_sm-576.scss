@@ -1,1 +1,23 @@
-@media (max-width: 575.98px)  {}
+@media (max-width: 575.98px)  {
+  .mobile-line {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .slider-wrapper {
+    & .slick-dots li button {
+      width: 35px;
+    }
+    & .slider-nav {
+      width: 320px;
+      height: 240px;
+      position: static;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      & .slick-slide {
+        width: 320px;
+      }
+    }
+  }
+}

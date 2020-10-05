@@ -1,0 +1,15 @@
+.modal-default {
+  &__header {
+    background: $corporate;
+    color: $white;
+  }
+  &__close {
+    color: $white;
+    opacity: .7;
+    transition: .3s;
+    &:hover {
+      color: $white;
+      opacity: 1 !important;
+    }
+  }
+}

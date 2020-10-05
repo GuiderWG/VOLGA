@@ -1,0 +1,130 @@
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  & .slick-initialized {
+    visibility: visible;
+  }
+  & .slick-dots{
+    position: absolute;
+    bottom: 19px;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  & .slick-dots li{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  & .slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    margin: 0 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 0;
+    position: relative;
+  }
+  & .slick-dots li button:active{
+    background-color: transparent;
+  }
+  & .slick-dots li.slick-active button:after,
+  & .slick-dots li button:active:after{
+    background: #f73d3e;
+  }
+  & .slick-dots li button:after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: transparent;
+  }
+
+  & .control-c {
+    width: 21px;
+  }
+
+  & .control-c:hover {
+    cursor: pointer;
+  }
+
+  & .slick-prev, & .slick-next {
+    top: 9%;
+    transform: translate(0, -9%);
+  }
+
+  & .slick-prev {
+    left: 30px;
+  }
+
+  & .slick-next {
+    right: 30px;
+  }
+
+  & .slick-dots li button {
+    width: 63px;
+    height: 3px;
+    border-radius: 0;
+    border-color: #6F6F6F;
+  }
+
+  & .slick-dots li.slick-active button {
+    border-color: #fff;
+    outline: none;
+  }
+
+  & .slick-dots {
+    bottom: auto;
+    top: 50px;
+  }
+
+  &  .slick-dots li button::after, &  .slick-dots li button::before {
+    display: none;
+  }
+
+  & .slick-list {
+    text-align: center;
+  }
+  & .main-slider__img {
+    max-width: 100%;
+  }
+}
+
+.slider-nav {
+  width: 530px;
+  height: 260px;
+  padding: 25px 30px;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba($black, .75);
+  color: $white;
+  text-transform: uppercase;
+  & div span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  & div p {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 60px;
+    padding-left: 10px;
+  }
+
+  & .slick-slide {
+    width: 450px;
+  }
+}
+

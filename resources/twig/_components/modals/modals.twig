@@ -1,0 +1,36 @@
+<!-- Callback -->
+<div class="modal modal-default fade" id="callback" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content modal-default__content">
+            <div class="modal-header modal-default__header">
+                <h5 class="modal-title modal-default__title">Заказать звонок</h5>
+                <button type="button" class="close modal-default__close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-default__body">
+                <form class="form-default">
+                    <div class="form-group form-default__group">
+                        <input type="text" class="form-control form-default__input" placeholder="Имя">
+                    </div>
+                    <div class="form-group form-default__group">
+                        <input type="text" class="form-control form-default__input" placeholder="Телефон">
+                    </div>
+
+                    <div class="form-group form-default__button">
+                        {%  include "../buttons/btn.twig" with
+                            {
+                                'name': 'Отправить',
+                                'type': 'submit'
+                            }
+                        %}
+                    </div>
+
+                    <div class="form-default__privacy">
+                        Заполняя данную форму, вы соглашаетесь с <a href="/politika-konfidencialnosti/">политикой обработки</a> персональных данных.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

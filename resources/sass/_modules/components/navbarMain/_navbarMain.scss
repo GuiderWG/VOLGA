@@ -1,8 +1,7 @@
 .navbar-main {
   &__group {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    display: table;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -11,6 +10,8 @@
   }
   &__item {
     position: relative;
+    display: table-cell;
+    text-align: center;
   }
   &__link {
     color: $white;
@@ -24,12 +25,9 @@
       background: $black;
     }
   }
-  &__item_active &__link {
+  &__item_active &__link, &__item_dropdown_open &__link {
     color: $white;
     background: $black;
-  }
-  &__item_dropdown_open &__link {
-    color: $white;
   }
   &__item_dropdown_open &__link::after {
     content: '';
@@ -39,8 +37,9 @@
 
 .main-menu-level {
   width: 100%;
-  display: block;
+  display: none;
   position: absolute;
+  z-index: 9;
   top: 53px;
   left: 0;
   padding: 5px 0;
