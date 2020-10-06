@@ -8,3 +8,12 @@ body {
   line-height: normal;
   height: 12000px;
 }
+
+h1 {
+	font-weight: 300;
+	font-size: 46px;
+	line-height: 58px;
+	text-transform: uppercase;
+	color: $black;
+	margin-bottom: 25px;
+}
