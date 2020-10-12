@@ -1,5 +1,44 @@
-<footer>
+<footer class="footer">
     <div class="container">
-        FOOTER
+        <div class="row">
+        	<div class="col-lg-5 col-md-4 d-none d-md-block">
+	        	<div class="footer__logo">
+	        		{% include '../_components/logo/logo.twig' with 
+	        		{
+						'src': '/images/footer-logo.svg'
+	        		} %}
+	        	</div>
+        	</div>
+        	<div class="col-lg-4 col-md-4 d-md-block d-none">
+        		{% include '../_components/navigations/navbarFooter.twig' %}
+        	</div>
+        	<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        		<div class="footer__contantc-mini">
+        			{%  include "../_components/contactsMini/contactsMini.twig" with {'class': 'contacts-mini'} %}
+        		</div>
+        	</div>
+        </div>
+        <div class="row footer__bottom">
+        	<div class="col-lg-5 col-md-4 col-12">
+        		<p class="footer__copy">Copyright © 2020 ВолгаСпецХиммаш. Все права защищены.</p>
+				<!--noindex-->
+				<p class="footer__asm">Системный интернет-маркетинг <a href="https://forward-media.ru/" target="_blank" class="footer__asm-link">ASM Forward Media</a></p>
+				<p class="footer__asm">Наш сайт разработали в <a href="https://forward-media.ru/" target="_blank" class="footer__asm-link">ASM Forward Media</a></p>
+				<!--/noindex-->
+        	</div>
+        	<div class="col-lg-4 col-md-4 col-12">
+        		{% include '../_components/search/search.twig' %}
+        	</div>
+        	<div class="col-lg-3 col-md-4 col-12">
+        		<div class="footer__social">
+        			<div class="footer__social-item">
+        				<a href="/"><img src="/images/icons/cosial-01.svg" alt=""></a>
+        				<a href="/"><img src="/images/icons/cosial-02.svg" alt=""></a>
+        				<a href="/"><img src="/images/icons/cosial-03.svg" alt=""></a>
+        				<a href="/"><img src="/images/icons/cosial-04.svg" alt=""></a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
     </div>
 </footer>

@@ -9,6 +9,7 @@
       max-width: 260px;
     }
   }
+
   .navbar-main {
     display: none;
   }
@@ -21,6 +22,28 @@
       line-height: 30px;
       margin-top: 50px;
       padding-left: 30px;
+    }
+  }
+
+  .navbar-footer__group {
+    font-size: 16px;
+  }
+
+  .footer {
+    &__copy,
+    &__asm {
+      font-size: 12px;
+    }
+    &__contantc-mini{
+      &__item {
+        margin-bottom: 15px;
+      }
+      &__link {
+        font-size: 16px;
+      }
+      &__text {
+        font-size: 16px;
+      }
     }
   }
 }
