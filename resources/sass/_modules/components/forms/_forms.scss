@@ -3,3 +3,36 @@
     height: 46px;
   }
 }
+
+.footer__search {
+	position: relative;
+	display: inline-block;
+	& input {
+		background: none;
+		border: 1px solid $white;
+		padding: 3px 10px;
+		color: $white;
+		outline: none;
+		&::placeholder {color: $white;}			
+		&::-moz-placeholder {color: $white;}			
+		&::-webkit-input-placeholder {color: $white;}			
+		&::-ms-input-placeholder {color: $white;}			
+	}
+	&-btn {
+		background: $corporate;
+		border: none;
+		position: absolute;
+		width: 27px;
+		height: 27px;
+		top: 0;
+		right: -26px;
+		outline: none;
+		&::before {
+			content: "";
+			width: 15px;
+			height: 15px;
+			display: block;
+			background-image: url('/images/icons/search.svg');
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.footer {
+	background: $body-color;
+	padding: 40px 0;
+	&__logo {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+	&__copy {
+		color: $gray;
+		text-transform: uppercase;
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+	&__bottom {
+		margin-top: 15px;
+		align-items: center;
+	}
+	&__social {
+		&-item img {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			&:hover {
+				filter: brightness(0.7);
+			}
+		}
+	}
+	&__asm {
+		color: $gray;
+		text-transform: uppercase;
+		font-size: 13px;
+		margin-bottom: 5px;
+		&-link {
+			color: $gray;
+			&:hover {
+				color: $corporate;
+			}
+		}
+	}
+}
+
+.footer__contantc-mini {
+	.contacts-mini {
+		display: block;
+		&__item {
+			justify-content: flex-start;
+			margin-bottom: 27px;
+		}
+		&__icon {
+
+		}
+		&__link {
+			color: $white;
+		}
+		&__text {
+			color: $white;
+		}
+	}
+}
