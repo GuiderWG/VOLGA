@@ -1,0 +1,16 @@
+{% extends "_layouts/app.twig" %}
+
+{% set title = 'ASMFM project' %}
+
+{% block body %}
+    {%  include "_sections/header.twig" %}
+    {%  include "_sections/topMenu.twig" %}
+    {% include '_components/breadcrumbs/breadcrumbs.twig' %}
+    
+    <main class="main">
+    	{%  include "_sections/catalog.twig" %}
+    </main>
+
+    {%  include "_sections/footer.twig" %}
+    {% include '_components/modals/modals.twig' %}
+{% endblock %}
