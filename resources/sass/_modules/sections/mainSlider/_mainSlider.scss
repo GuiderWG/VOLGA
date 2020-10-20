@@ -1,10 +1,20 @@
 .slider-wrapper {
   position: relative;
   overflow: hidden;
-  visibility: hidden;
-  & .slick-initialized {
-    visibility: visible;
+  min-height: 200px;
+  //visibility: hidden;
+
+  & .main-slider {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    height: 0;
+    &.slick-initialized {
+      //visibility: visible;
+      height: 100%;
+      opacity: 1;
+    }
   }
+
   & .slick-dots{
     position: absolute;
     bottom: 19px;
@@ -109,6 +119,14 @@
   background: rgba($black, .75);
   color: $white;
   text-transform: uppercase;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  max-height: 0;
+  &.slick-initialized {
+    //visibility: visible;
+    max-height: 100%;
+    opacity: 1;
+  }
   & div span {
     font-weight: 300;
     font-size: 16px;

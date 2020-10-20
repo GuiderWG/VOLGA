@@ -2,7 +2,7 @@
     padding: 30px 0;
 
     &__item {
-        height: 272px;
+        height: 242px;
         margin: 0 15px 30px 0;
     }
 
@@ -12,15 +12,12 @@
     transition: all .3s ease-in;
     overflow: hidden;
     position: relative;
-    background-color: $white;
-    border: 2px solid $body-color;
+    background: lighten($black, 50%);
     text-decoration: none;
     display: block;
-    &:hover {
-        background-color: $body-color;
-        box-shadow: inset 0 0 20px $body-color, 0 0 20px $body-color;
-        text-decoration: none;
-    }
+    //&:hover {
+    //    box-shadow: inset 0 0 20px $body-color, 0 0 20px $body-color;
+    //}
 
     &::after {
         content: "";
@@ -29,7 +26,7 @@
         top: 0;
         bottom: 0;
         left: 0;
-        transition: all .3s ease-in;
+        transition: all .3s ease-in-out;
     }
 
     &:hover::after {

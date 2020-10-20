@@ -1,12 +1,40 @@
 .top-menu {
   background: $corporate;
   color: $white;
+  transition: box-shadow .3s ease-in-out;
+  &.fixed-top {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.375);
+  }
 }
 
 .mobile-line {
   display: flex;
-  justify-content: space-between;
   &__callback {
     width: 220px;
+    margin-left: auto;
   }
+  &__cont {
+    margin-left: 5px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+  }
+  .top-menu.fixed-top &__cont {
+    opacity: 1;
+  }
+  &__link {
+    color: $white;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: $black;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: $white;
+      background: rgba($black, .5);
+    }
+  }
+
 }
