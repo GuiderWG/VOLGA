@@ -1,5 +1,23 @@
 export default $(document).ready(() => {
 
+    /*Fixed menu*/
+    $(window).scroll(function() {
+
+        let topMenu = $('.top-menu');
+        topMenu.removeClass('fixed-top');
+        if ($(this).width() >= 320) {
+            let header = $('.header');
+            if ($(this).scrollTop() > header.outerHeight()) {
+                topMenu.addClass('fixed-top');
+                header.css({'marginBottom': `${topMenu.outerHeight()}px`});
+            } else {
+                topMenu.removeClass('fixed-top');
+                header.css({'marginBottom': `0`});
+            }
+        }
+    }).scroll();
+    /*-----*/
+
     /* TOP MENU DROPDOWN 2LVL */
     $('.navbar-main__item_dropdown').hover(
         function() {
@@ -31,7 +49,7 @@ export default $(document).ready(() => {
     });
     /* END Mobile menu */
 
-    if($.fn.slick) {
+    if ($.fn.slick) {
         $('.main-slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -55,8 +73,8 @@ export default $(document).ready(() => {
             speed: 300,
             centerMode: true,
             focusOnSelect: true,
-            prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/icons/prev.svg'>",
-            nextArrow:"<img class='a-right control-c next slick-next' src='/images/icons/next.svg'>"
+            prevArrow: '<img class="a-left control-c prev slick-prev" src="/images/icons/prev.svg" alt="">',
+            nextArrow: '<img class="a-right control-c next slick-next" src="/images/icons/next.svg" alt="">',
         });
 
     }

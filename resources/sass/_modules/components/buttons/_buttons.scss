@@ -17,6 +17,7 @@
   }
   &_theme_white_hover {
     height: 100%;
+    border: none;
     &:hover {
       background: rgba($black, .5);
       color: $white;
